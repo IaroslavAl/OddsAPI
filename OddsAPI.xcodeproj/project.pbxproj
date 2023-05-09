@@ -13,6 +13,7 @@
 		C400E1D52A0813E6003877D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C400E1D32A0813E6003877D9 /* Main.storyboard */; };
 		C400E1D72A0813E8003877D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C400E1D62A0813E8003877D9 /* Assets.xcassets */; };
 		C400E1DA2A0813E8003877D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C400E1D82A0813E8003877D9 /* LaunchScreen.storyboard */; };
+		C400E1E72A08159F003877D9 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400E1E62A08159F003877D9 /* Sport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C400E1D62A0813E8003877D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C400E1D92A0813E8003877D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C400E1DB2A0813E8003877D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C400E1E62A08159F003877D9 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		C400E1CC2A0813E6003877D9 /* OddsAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C400E1CD2A0813E6003877D9 /* AppDelegate.swift */,
-				C400E1CF2A0813E6003877D9 /* SceneDelegate.swift */,
-				C400E1D12A0813E6003877D9 /* ViewController.swift */,
-				C400E1D32A0813E6003877D9 /* Main.storyboard */,
-				C400E1D62A0813E8003877D9 /* Assets.xcassets */,
-				C400E1D82A0813E8003877D9 /* LaunchScreen.storyboard */,
-				C400E1DB2A0813E8003877D9 /* Info.plist */,
+				C400E1E52A081519003877D9 /* Models */,
+				C400E1E42A0814F5003877D9 /* ViewControllers */,
+				C400E1E22A0814C7003877D9 /* Storyboards */,
+				C400E1E12A08149B003877D9 /* App */,
+				C400E1E32A0814DC003877D9 /* Resorces */,
 			);
 			path = OddsAPI;
+			sourceTree = "<group>";
+		};
+		C400E1E12A08149B003877D9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C400E1CD2A0813E6003877D9 /* AppDelegate.swift */,
+				C400E1CF2A0813E6003877D9 /* SceneDelegate.swift */,
+				C400E1DB2A0813E8003877D9 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C400E1E22A0814C7003877D9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C400E1D32A0813E6003877D9 /* Main.storyboard */,
+				C400E1D82A0813E8003877D9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C400E1E32A0814DC003877D9 /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				C400E1D62A0813E8003877D9 /* Assets.xcassets */,
+			);
+			path = Resorces;
+			sourceTree = "<group>";
+		};
+		C400E1E42A0814F5003877D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C400E1D12A0813E6003877D9 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C400E1E52A081519003877D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C400E1E62A08159F003877D9 /* Sport.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +183,7 @@
 			files = (
 				C400E1D22A0813E6003877D9 /* ViewController.swift in Sources */,
 				C400E1CE2A0813E6003877D9 /* AppDelegate.swift in Sources */,
+				C400E1E72A08159F003877D9 /* Sport.swift in Sources */,
 				C400E1D02A0813E6003877D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 848LVZR9JB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OddsAPI/Info.plist;
+				INFOPLIST_FILE = OddsAPI/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 848LVZR9JB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OddsAPI/Info.plist;
+				INFOPLIST_FILE = OddsAPI/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
